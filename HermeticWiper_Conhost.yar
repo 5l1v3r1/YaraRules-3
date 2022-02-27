@@ -1,6 +1,6 @@
 /*
    YARA Rule Set
-   Author: Arda Büyükkaya
+   Author: Arda BÃ¼yÃ¼kkaya
    Date: 2022-02-27
    Identifier: HermeticWiper
    Reference: 
@@ -11,7 +11,7 @@
 rule HermeticWiper_Conhost {
    meta:
       description = "HermeticWiper - file Conhost.exe"
-      author = "Arda Büyükkaya"
+      author = "Arda BÃ¼yÃ¼kkaya"
       reference = ""
       date = "2022-02-27"
       hash1 = "0385eeab00e946a302b24a91dea4187c1210597b8e17cd9e2230450f5ece21da"
@@ -36,7 +36,7 @@ rule HermeticWiper_Conhost {
       $s18 = "essdrive" fullword ascii
       $s19 = "ojectare" fullword ascii
       $s20 = "h:\\epm2" fullword ascii
-	  $cert1 = "Hermetica Digital Ltd" wide ascii nocase
+      $cert1 = "Hermetica Digital Ltd" wide ascii nocase
    condition:
       uint16(0) == 0x5a4d and filesize < 300KB and
       8 of them
