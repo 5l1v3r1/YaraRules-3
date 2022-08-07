@@ -66,7 +66,7 @@ rule FileSyncShell64 {
 
 
 
-rule Dropout_APT{
+rule Academic_APT{
    meta:
       description = "Academic APT - from files Birlestirilmis_GORUSLER.doc, MURENPRVZ-KYP-03-EK3-YKS (Yazilim Konfigurasyon Sureci).doc, MURENPRVZ-KYP-03-EK5-PMF (Platforma Mudahale Formu).doc, MÜRENPRVZ-STB-XX-XX (Surum Tanimlama Belgesi).doc"
       author = "Arda Büyükkaya"
