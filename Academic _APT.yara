@@ -88,6 +88,6 @@ rule Academic_APT{
       $s10 = "\"\\Temp\" " fullword ascii
       $s11 = "Microsoft.XMLHTTP" fullword ascii
    condition:
-      ( uint16(0) == 0xcfd0 and filesize < 2000KB and ( 1 of ($x*) and 4 of them )
-      ) or ( all of them )
+      ( uint16(0) == 0xcfd0 and filesize < 2000KB and 4 of ($s*))
+ 
 }
